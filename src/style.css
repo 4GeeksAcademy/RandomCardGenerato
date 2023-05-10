@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 500px;
+    flex-direction: column;
   }
   
   .card {
@@ -43,14 +44,13 @@ body {
   
   .button {
     font-size: 24px;
-    margin-bottom: 16px;
+    margin-top: 40px;
     color: #fff;
     background-color: #b12222;
     border: 2px solid gold;
     border-radius: 16px;
     padding: 8px 16px;
-    align-items: center;
-  }
+    }
   
   
   

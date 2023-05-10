@@ -11,8 +11,13 @@ function dealCard() {
   cardNumberElement.textContent = numbers[randomNumberIndex];
   for (var i = 0; i < cardSuitElement.length; i++) {
     cardSuitElement[i].textContent = suitTexts[randomSuitIndex];
-    if (suitTexts[randomSuitIndex] === '♦' || suitTexts[randomSuitIndex] === '♥') {
-      cardSuitElement.style.color = "red";
+    if (cardSuitElement[i].textContent !== suitTexts[0] || cardSuitElement[i].textContent !== suitTexts[1]) {
+      cardSuitElement[i].style.color = "black";
+      if (cardSuitElement[i].textContent === suitTexts[0] || cardSuitElement[i].textContent === suitTexts[1]) {
+        cardSuitElement[i].style.color = "red";
+        
+        }
     }
+    
   }
 }
